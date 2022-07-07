@@ -17,66 +17,54 @@
             </a></div>
         <div class="col-auto" style="margin-right: 8px;"><a href="favorites.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark" style="width: 28px;height: 30px;margin-right: 6px;color: var(--bs-dark);">
                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path>
-                </svg></a><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell" style="width: 28px;height: 30px;color: var(--bs-dark);">
+                </svg></a><a href="notification.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell" style="width: 28px;height: 30px;color: var(--bs-dark);">
                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
                 </svg></a></div>
     </div>
-    <div class="row">
-        <div class="col"><a href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" style="font-size: 26px;color: var(--bs-dark);">
+    <div class="row g-0">
+        <div class="col"><a href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" style="font-size: 25px;color: var(--bs-dark);">
                     <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"></path>
                 </svg></a></div>
     </div>
-    <div class="row g-0">
+    <div class="row g-0 justify-content-between" style="margin-top: 6px;margin-right: 0px;margin-bottom: 14px;">
         <div class="col">
-            <div class="row g-0 justify-content-center">
-                <div class="col-auto">
-                    <h5>Vegan Meal Plan</h5>
+            <div class="accordion" role="tablist" id="accordion-1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">change photo</button></h2>
+                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body"><input type="file"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row g-0">
-                <div class="col">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Monday</th>
-                                    <th>Tuesday</th>
-                                    <th>Wednesday</th>
-                                    <th>Thursday</th>
-                                    <th>Friday</th>
-                                    <th>Saturday</th>
-                                    <th>Sunday</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tahini</td>
-                                    <td>Yogurt</td>
-                                    <td>Feta</td>
-                                    <td>Eggs</td>
-                                    <td>Hazelnuts</td>
-                                    <td>Tahini</td>
-                                    <td>Feta</td>
-                                </tr>
-                                <tr>
-                                    <td>Pasta</td>
-                                    <td>Lentils</td>
-                                    <td>Fish soup</td>
-                                    <td>Mussels</td>
-                                    <td>Shrimps</td>
-                                    <td>Beef</td>
-                                    <td>Chicken</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="true" aria-controls="accordion-1 .item-2">change info</button></h2>
+                    <div class="accordion-collapse collapse show item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body"><input type="text" placeholder="name" name="name" style="margin-bottom: 5px;"><input type="text" placeholder="email" name="email" style="margin-bottom: 5px;"><input type="text" name="password" placeholder="password" style="margin-bottom: 5px;"><input type="text" name="category" placeholder="category"></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">log out</button></h2>
+                    <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body">
+                            <div class="btn-group" role="group"></div><a class="btn btn-danger" role="button" href="log%20in.html">YES</a><button class="btn btn-success" type="button">NO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">delete account</button></h2>
+                    <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
+                        <div class="accordion-body">
+                            <div class="btn-group" role="group"></div><a class="btn btn-danger" role="button" href="index.html">YES</a><button class="btn btn-success" type="button">NO</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col" style="padding-left: 10px;"><span>Brain: 70%</span></div>
-            </div>
         </div>
     </div>
+    <div class="row g-0 justify-content-between" style="margin-top: 6px;margin-right: 0px;margin-bottom: 14px;">
+        <div class="col">
+            <div class="accordion" role="tablist" id="accordion-3"></div>
+        </div>
+    </div><a href="#"></a>
     <nav class="navbar navbar-light navbar-expand fixed-bottom">
         <div class="container-fluid">
             <div class="collapse navbar-collapse">
