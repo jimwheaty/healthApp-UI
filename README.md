@@ -1,3 +1,5 @@
 # This is the UI for the healthApp project!
 
-It is using bootstrap studio for the design
+The new design is using DaisyUI!
+The old design is from bootstrap studio.
+
